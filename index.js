@@ -26,7 +26,19 @@ app.get("/api/resources",(req,res)=>{
 })
 app.post("/api/resources",(req,res)=>{
     const resources = getResources();
-    res.send(resources);
+    const resource = req.body;
+
+    resource.createdAt = new Date();
+    resource.status = "inactive";
+    resource.id = Date.now().toString();
+    resources.push(resource);
+    fs.writeFile(pathToFile,JSON.stringify(resources,null,2),(err)=>{
+        if(err){
+            return res.status(422).send("cannot store data in the file!")
+        }
+        return res.send("Data has been saved!")
+    })
+   
 })
 app.listen(PORT, ()=>{
     console.log("server is listening on port:" + PORT);

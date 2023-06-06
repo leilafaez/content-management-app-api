@@ -14,6 +14,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 const getResources = ()=>JSON.parse(fs.readFileSync(pathToFile));
+app.use(express.json())
 
 app.get("/", (req,res)=>{
     res.send("hello world!")
@@ -23,7 +24,10 @@ app.get("/api/resources",(req,res)=>{
     const resources = getResources();
     res.send(resources);
 })
-
+app.post("/api/resources",(req,res)=>{
+    const resources = getResources();
+    res.send(resources);
+})
 app.listen(PORT, ()=>{
     console.log("server is listening on port:" + PORT);
 })

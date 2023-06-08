@@ -47,8 +47,15 @@ app.patch("/api/resources/:id", (req, res) => {
       return res.status(422).send("cannot edit data in the file!");
     }
     return res.send("Data has been updated!");
-  });
-});
+  })
+})
+
+app.get("/api/activeResource",(req,res)=>{
+    const resources = getResources();
+    const activeResource = resources.find(resource=>resource.status==="active");
+    res.send(activeResource);
+})
+
 app.get("/api/resources",(req,res)=>{
     const resources = getResources();
     res.send(resources);

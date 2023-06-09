@@ -4,6 +4,7 @@
     "description": "dsdsf",
     "link": "sdfsfs",
     "priority": "2",
+    "timeToFinish": "1",
     "createdAt": "2023-06-06T12:01:10.284Z",
     "status": "inactive",
     "id": "1686052870284"
@@ -13,6 +14,7 @@
     "description": "sdd",
     "link": "d",
     "priority": "2",
+    "timeToFinish": "55",
     "createdAt": "2023-06-06T11:56:32.876Z",
     "status": "inactive",
     "id": "1686052592876"
@@ -22,9 +24,11 @@
     "description": "this is test for unshift method",
     "link": "asd",
     "priority": "1",
+    "timeToFinish": "180",
     "createdAt": "2023-06-06T11:49:10.437Z",
-    "status": "inactive",
-    "id": "1686052150437"
+    "status": "active",
+    "id": "1686052150437",
+    "activationTime": "2023-06-09T18:27:32.682Z"
   },
   {
     "id": "1",
@@ -32,6 +36,7 @@
     "description": "I would like to learn singleton in JS language, it's important for my work",
     "link": "https://link.com",
     "priority": 3,
+    "timeToFinish": "160",
     "status": "inactive",
     "createdAt": "May 20,2023"
   },
@@ -41,6 +46,7 @@
     "description": "Resource 2 Desc",
     "link": "https://link.com",
     "priority": 2,
+    "timeToFinish": "22",
     "status": "inactive",
     "createdAt": "May 20,2023"
   },
@@ -50,6 +56,7 @@
     "description": "Resource 3 Desc",
     "link": "https://link.com",
     "priority": 1,
+    "timeToFinish": "12",
     "status": "inactive",
     "createdAt": "May 20,2023"
   },
@@ -58,6 +65,7 @@
     "description": "I have learned this new technology to improve my hard skills",
     "link": "https://nextjs.org/",
     "priority": "2",
+    "timeToFinish": "160",
     "createdAt": "2023-06-06T11:43:34.328Z",
     "status": "inactive",
     "id": "1686051814328"
@@ -67,6 +75,7 @@
     "description": "dsdsf",
     "link": "sdfsfs",
     "priority": "2",
+    "timeToFinish": "180",
     "createdAt": "2023-06-06T12:01:10.284Z",
     "status": "inactive",
     "id": "myId"

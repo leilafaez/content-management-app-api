@@ -63,7 +63,7 @@ app.get("/api/activeresource", (req, res) => {
   const activeResource = resources.find(
     (resource) => resource.status === "active"
   );
-  res.send(activeResource);
+  res.json(activeResource);
 });
 
 app.get("/api/resources", (req, res) => {

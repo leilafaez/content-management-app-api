@@ -20,7 +20,7 @@ app.get("/api/resources/:id", (req, res) => {
   const resources = getResources();
   const { id } = req.params;
   const resource = resources.find((resource) => resource.id === id);
-  res.send(resource);
+  res.json(resource);
 });
 
 app.patch("/api/resources/:id", (req, res) => {
@@ -70,7 +70,7 @@ app.get("/api/activeresource", (req, res) => {
 
 app.get("/api/resources", (req, res) => {
   const resources = getResources();
-  res.send(resources);
+  res.json(resources);
 });
 
 app.post("/api/resources", (req, res) => {

@@ -64,7 +64,7 @@ app.get("/api/activeresource", (req, res) => {
   const activeResource = resources.find(
     (resource) => resource.status === "active"
   );
-  res.json({ data: activeResource });
+  res.send( activeResource );
 });
 
 
